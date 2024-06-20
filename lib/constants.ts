@@ -1,2 +1,2 @@
 export const DEPLOY_URL =
-  "https://vercel.com/new/project?template=https://github.com/raythurman2386/ravenbase.git";
+  "https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fraythurman2386%2Fravenbase";

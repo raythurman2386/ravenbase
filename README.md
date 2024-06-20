@@ -75,7 +75,7 @@ const [value, setValue] = useLocalStorage("key", "default value");
 
 Deploy your application with one click using Vercel. Click the button below to deploy:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/raythurman2386/ravenbase.git)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fraythurman2386%2Fravenbase)
 
 ## Contributing
 
