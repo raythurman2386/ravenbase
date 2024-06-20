@@ -1,4 +1,4 @@
-import { ThemeToggle } from "@/components/theme-toggle";
+import { Github } from "@/components/icons";
 import {
   Card,
   CardContent,
@@ -13,41 +13,46 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <ThemeToggle />
+    <main className="flex min-h-screen flex-col items-center p-24">
+      <div className="z-10 w-full max-w-xl px-5 xl:px-0 text-primary">
+        <div className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors">
+          <Github className="h-5 w-5 text-[#1d9bf0]" />
+          <span className="text-sm font-semibold text-[#1d9bf0]">
+            Introducing RavenBase
+          </span>
         </div>
+        <h1
+          className="animate-fade-up text-center font-display text-4xl font-bold tracking-[-0.02em] drop-shadow-sm [text-wrap:balance] md:text-5xl md:leading-snug lg:text-6xl lg:leading-snug"
+          style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
+        >
+          Building blocks for your next project
+        </h1>
+        <p
+          className="mt-6 animate-fade-up text-center text-lg md:text-xl lg:text-2xl [text-wrap:balance]"
+          style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+        >
+          A collection of components, hooks, and utilities for your Next.js
+          projects, ready for deployment.
+        </p>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 lg:grid-cols-3 gap-5 px-5 md:grid-cols-3 xl:px-0">
+      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 lg:grid-cols-3 gap-5 px-5 md:grid-cols-2 xl:px-0">
         {features.map(({ title, description, demo }) => (
           <Card
             key={title}
-            className="flex flex-col items-center justify-between"
+            className="flex flex-col items-center justify-between p-4"
           >
-            <CardHeader>
-              <CardTitle>{title}</CardTitle>
-              <CardDescription>{description}</CardDescription>
+            <CardHeader className="w-full">
+              <CardTitle className="text-lg md:text-xl lg:text-2xl text-center">
+                {title}
+              </CardTitle>
+              <CardDescription className="text-sm md:text-base lg:text-lg text-center mt-2">
+                {description}
+              </CardDescription>
             </CardHeader>
-            {demo}
-            <CardContent />
-
-            <CardFooter />
+            <CardContent className="flex flex-grow items-center justify-center w-full mt-4">
+              {demo}
+            </CardContent>
+            <CardFooter className="w-full" />
           </Card>
         ))}
       </div>
@@ -81,7 +86,7 @@ const features = [
     title: "Hooks, utilities, and more",
     description: "Precedent offers a collection of hooks and utilities",
     demo: (
-      <div className="grid grid-flow-col grid-rows-6 lg:grid-rows-3 gap-6">
+      <div className="grid grid-flow-col grid-rows-6 lg:grid-rows-3 gap-10">
         <span className="font-mono font-semibold">useIntersectionObserver</span>
         <span className="font-mono font-semibold">useLocalStorage</span>
         <span className="font-mono font-semibold">useScroll</span>
