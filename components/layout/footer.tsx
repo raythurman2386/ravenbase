@@ -27,14 +27,14 @@ export default function Footer() {
           <p className="font-medium">Buy me a coffee</p>
         </a>
         <Link
-          href="#"
+          href="/tos"
           className="text-xs underline-offset-4 hover:underline"
           prefetch={false}
         >
           Terms of Service
         </Link>
         <Link
-          href="#"
+          href="/privacy"
           className="text-xs underline-offset-4 hover:underline"
           prefetch={false}
         >
