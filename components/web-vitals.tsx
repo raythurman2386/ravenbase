@@ -5,12 +5,12 @@ import CountingNumbers from "@/components/counting-numbers";
 
 export default function WebVitals() {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 lg:h-56 lg:w-56">
       <motion.svg
         className="absolute inset-0 m-auto"
         viewBox="0 0 100 100"
-        width={140}
-        height={140}
+        width="100%"
+        height="100%"
       >
         <motion.circle
           initial={{ pathLength: 0 }}
@@ -32,7 +32,7 @@ export default function WebVitals() {
       <CountingNumbers
         value={100}
         duration={2500}
-        className="absolute inset-0 mx-auto flex items-center justify-center font-display text-5xl text-green-500"
+        className="absolute inset-0 flex items-center justify-center font-display text-4xl sm:text-5xl text-green-500"
       />
     </div>
   );
