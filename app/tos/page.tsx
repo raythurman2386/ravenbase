@@ -5,7 +5,8 @@ export default function TermsOfService() {
       <div className="space-y-4">
         <p>
           Welcome to RavenBase. These terms and conditions outline the rules and
-          regulations for the use of Ravenwood Software's website and services.
+          regulations for the use of Ravenwood Software&apos;s website and
+          services.
         </p>
 
         <h2 className="text-2xl font-semibold mt-6">Acceptance of Terms</h2>

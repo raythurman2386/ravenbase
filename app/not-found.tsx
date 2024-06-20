@@ -8,14 +8,14 @@ export default function NotFound() {
         404
       </h1>
       <p className="text-2xl mb-4 text-gray-600 dark:text-gray-400">
-        Oops! It seems you’ve found a page that doesn’t exist.
+        Oops! It seems you&apos;ve found a page that doesn&apos;t exist.
       </p>
       <p className="text-lg mb-8 text-gray-600 dark:text-gray-400">
-        Maybe you've taken a wrong turn somewhere, or the page has just vanished
-        into thin air!
+        Maybe you&apos;ve taken a wrong turn somewhere, or the page has just
+        vanished into thin air!
       </p>
       <p className="text-lg mb-8 text-gray-600 dark:text-gray-400">
-        But don't worry, you can always find your way back to the homepage.
+        But don&apos;t worry, you can always find your way back to the homepage.
       </p>
       <Link
         href="/"
