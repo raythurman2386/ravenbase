@@ -84,7 +84,7 @@ const features = [
   },
   {
     title: "Hooks, utilities, and more",
-    description: "Precedent offers a collection of hooks and utilities",
+    description: "RavenBase offers a collection of hooks and utilities",
     demo: (
       <div className="grid grid-flow-col grid-rows-6 lg:grid-rows-3 gap-10">
         <span className="font-mono font-semibold">useIntersectionObserver</span>
